@@ -1,0 +1,18 @@
+<br />
+<div class= "container col-9">
+	<div class= "row">
+		<h1>List of Products</h1>
+	</div>
+
+	<div class= "row">
+		<% @products.each do |list| %>
+		<%= list.product_name %>
+		<br />
+		<% end %>
+	</div>
+
+	<br />
+	<div class= "row">
+		<%= link_to 'Add a Product', new_product_path, class: 'btn btn-primary' %>
+	</div>
+</div>
